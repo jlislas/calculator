@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface CalculatorViewController : UIViewController
-
+@property (weak, nonatomic) IBOutlet UILabel *display;
+- (IBAction)enterPressed;
+- (IBAction)digitPressed:(UIButton *)sender;
+- (IBAction)operationPressed:(UIButton *)sender; 
 @end
